@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html form</title>
+    <style type="text/css">
+        body {
+             font-size: 16px;
+             background: #f9f9f9;
+        }
+        
+        h2{
+            text-align: center;
+            border-bottom: 2px solid green;
+        }
+        form{
+             width: 300px;
+             background: #fff;
+             padding: 15px 40px 40px;
+             margin: 50px auto 0;
+             border:2px solid #ccc;
+             border-radius: 5px;
+        }
+        
+        input, select{
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100px;
+            box-sizing:border-box;
+            border-radius: 2pxs;
+        }
+        
+        label{
+            display: block;
+            margin-bottom: 6px;
+        }
+        div{
+            padding-bottom: 12px;
+        }
+        
+        .form-inline{
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            padding: 8px 10px 4px;
+        }
+        .form-inline label,.form-inline input{
+            display: inline-block;
+            width: auto;
+            padding-right: 15px;
+        }
+        
+        input[type="submit"]{
+            font-size: 20px;
+            background: #4cbb17;
+            border-color: black;
+            box-shadow: 0 3px 0 grey;
+            color: white;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background: 228b22;
+        }
+    </style>
+</head>
+<body>
+
+      
+      <form>      
+          <h2>Registration Form</h2>
+      <div>
+          <label>Candidate Name</label>
+          <input type="text" name="">
+      </div>
+      
+      <div>
+          <label>Email Id</label>
+          <input type="email" name="">
+      </div>
+      
+      <div>
+          <label>Mobile Number</label>
+          <input type="Number" name="">
+      </div>
+      
+      <div>
+          <label>Course</label>
+          <select name="course">
+              <option>CCC</option>
+              <option>O level</option>
+              <option>A level</option>
+              <option>DCA</option>
+          </select>
+      </div>
+      
+      <div>
+          <label>Gender</label>
+          <div class="form-inline">
+              <label>
+                 <input type="radio" name="gender" value="male">Male
+              </label>
+              <label>
+                 <input type="radio" name="gender" value="female">Female
+              </label>
+          </div>
+      </div>
+      
+      <div>
+          <label>Category</label>
+          <div class="form-inline">
+              <label>
+                  <input type="checkbox" name="cat" value="Gen">Gen
+              </label>
+              <label>
+                  <input type="checkbox" name="cat" value="obc">OBC
+              </label>  
+              <label>
+                  <input type="checkbox" name="cat" value="sc">SC
+              </label>
+              <label>
+                  <input type="checkbox" name="cat" value="st">ST
+              </label>
+          </div>
+      </div>
+      
+      <div>
+          <input type="submit" name="" value="Register">
+      </div>
+  </form>
+  
+</body>
+</html>
